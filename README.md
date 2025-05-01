@@ -10,7 +10,7 @@
 - Легкость расширения и настройки под различные нужды.
 
 ## Технологии
-
+    
 - **Laravel 8** (или более новая версия)
 - **PHP 7.4+**
 - **SQLite** (или другая СУБД по выбору)
@@ -25,5 +25,5 @@
 Склонируйте репозиторий на свою локальную машину:
 
 ```bash
-git clone https://github.com/yourusername/repository-name.git
-cd repository-name
+git clone https://github.com/himtex/todo-app.git
+cd todo-app
