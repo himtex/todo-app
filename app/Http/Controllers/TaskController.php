@@ -27,7 +27,7 @@ class TaskController extends Controller
         ]);
 
         $task = Task::create($validated);
-        return response()->json($task, 201);
+        return response()->json(['message'=>'Task added.'], 201);
 
     }
 
@@ -50,7 +50,7 @@ class TaskController extends Controller
         $validated = $request->validate([
             'title' => 'sometimes|required|string|max:255',
             'description' => 'nullable|string',
-            'status' => 'in:pending,in_progress,completed',
+            'status' => 'in:pending,failed,completed',
         ]);
         $task->update($validated);
         return $task;
