@@ -46,7 +46,7 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $task = Task::findOrFile($id);
+        $task = Task::findOrFail($id);
         $validated = $request->validate([
             'title' => 'sometimes|required|string|max:255',
             'description' => 'nullable|string',
